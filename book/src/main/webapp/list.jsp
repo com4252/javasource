@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="/include/header.jsp"%>
 <h1>도서 목록</h1>
 <table class="table">
@@ -13,14 +13,24 @@
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach var="dto" items="${list}" >
+		<c:forEach var="dto" items="${list}">
 			<tr>
 				<td>${dto.code}</td>
 				<td><a href="readPro.jsp?code=${dto.code}">${dto.title}</a></td>
 				<td>${dto.writer}</td>
 				<td>${dto.price}</td>
 			</tr>
-		</c:forEach>
+		</c:forEach>		
 	</tbody>
 </table>
 <%@ include file="/include/footer.jsp"%>
+
+
+
+
+
+
+
+
+
+
